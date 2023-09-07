@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
 jobs:
-  docker:
+  build-push:
     env:
       REGISTRY: ghcr.io/devozs
       IMAGE: ikit-frontend
@@ -14,13 +14,13 @@ jobs:
       - name: "Checkout GitHub Action"
         uses: actions/checkout@master
 
-    - name: Generate build ID
-      id: prep
-      run: |
-          branch=${GITHUB_REF##*/}
-          sha=${GITHUB_SHA::8}
-          ts=$(date +%s)
-          echo "::set-output name=BUILD_ID::${branch}-${sha}-${ts}"          
+      - name: Generate build ID
+        id: prep
+        run: |
+            branch=${GITHUB_REF##*/}
+            sha=${GITHUB_SHA::8}
+            ts=$(date +%s)
+            echo "::set-output name=BUILD_ID::${branch}-${sha}-${ts}"          
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
