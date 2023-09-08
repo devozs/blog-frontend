@@ -27,9 +27,11 @@ useHead({
     {
       hid: "og:image",
       property: "og:image",
-      content: `https://ikit.devozs.com/${data.value.article.img}`,
+      content: `https://ikit.devozs.com/${data.value.article.img}?timestamp=${new Date().getMilliseconds()}`,
     },
     { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:image', content: `https://ikit.devozs.com/${data.value.article.img}?timestamp=${new Date().getMilliseconds()}` },
+
   ],
 });
 </script>
