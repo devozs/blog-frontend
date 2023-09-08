@@ -58,7 +58,7 @@ useHead({
                     <p>{{ article.description }}</p>
                     <ul class="article-tags">
                       <li class="tag" v-for="(tag, n) in article.tags" :key="n">
-                        <NuxtLink :to="`/blog/tags/${tag}`" class="underline"> {{ tag }} </NuxtLink>
+                        <NuxtLink :to="`/tags/${tag}`" class="underline"> {{ tag }} </NuxtLink>
                       </li>
                     </ul>
                   </header>

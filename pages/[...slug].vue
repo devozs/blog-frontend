@@ -27,7 +27,7 @@ useHead({
     {
       hid: "og:image",
       property: "og:image",
-      content: `https://site.com/${data.value.article.img}`,
+      content: `https://ikit.devozs.com/${data.value.article.img}`,
     },
   ],
 });
