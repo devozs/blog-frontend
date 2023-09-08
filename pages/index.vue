@@ -20,7 +20,7 @@ useHead({
     {
       hid: "og:image",
       property: "og:image",
-      content: `https://blog.devozs.com/home.png`,
+      content: `https://blog.devozs.com/devops-avatar.png`,
     },
   ],
 });
