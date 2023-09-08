@@ -15,34 +15,42 @@ const filter = ref(tags?.split(","));
 // set meta for page
 useHead({
   title: "All Posts",
-  meta: [{ name: "description", content: "Here's a list of all my great articles" }],
+  meta: [
+    { name: "description", content: "Here's a list of all DevOps blogs" },
+    {
+      hid: "og:image",
+      property: "og:image",
+      content: `https://blog.devozs.com/home.png`,
+    },
+  ],
 });
 </script>
 <template>
   <main>
-    <header class="page-heading">
-      <div class="wrapper">
+    <div>
+      <div class="img-cont h-72 mb-2">
+        <img :src="`/img/devops-avatar.png`" :alt="DevOzsHome" class=" rounded-2xl" />
+      </div>
+      <!-- <div class="wrapper">
         <h1 class="text-5xl font-extrabold">All blogs</h1>
         <p class="font-medium text-lg">Here's a list of all DevOps blogs</p>
-      </div>
-    </header>
+      </div> -->
+    </div>
+
     <section class="page-section">
       <Tags />
 
       <!-- Render list of all articles in ./content/blog using `path` -->
       <!-- Provide only defined fieldsin the `:query` prop -->
-      <ContentList
-        path="/blog"
-        :query="{
-          only: ['title', 'description', 'tags', '_path', 'img'],
-          where: {
-            tags: {
-              $contains: filter,
-            },
+      <ContentList path="/blog" :query="{
+        only: ['title', 'description', 'tags', '_path', 'img'],
+        where: {
+          tags: {
+            $contains: filter,
           },
-          $sensitivity: 'base',
-        }"
-      >
+        },
+        $sensitivity: 'base',
+      }">
         <!-- Default list slot -->
         <template v-slot="{ list }">
           <ul class="article-list">

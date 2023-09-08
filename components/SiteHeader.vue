@@ -5,7 +5,7 @@
     <div class="wrapper">
       <NuxtLink to="/" class="no-underline">
         <figure class="site-logo">
-          <h1>IKit</h1>
+          <h1>DevOzs Blog</h1>
         </figure>
       </NuxtLink>
 

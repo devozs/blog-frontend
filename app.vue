@@ -1,7 +1,7 @@
 <!-- ./app.vue -->
 <script setup>
 useHead({
-  title: "Ikit DevOps",
+  title: "DevOzs Blog",
   meta: [
     { name: 'description', content: 'DevOps Interview Blog Posts built by DevOzs' }
   ],

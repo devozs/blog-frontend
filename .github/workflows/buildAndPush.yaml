@@ -1,4 +1,4 @@
-name: IKit Frontend - Build and Push
+name: Blog Frontend - Build and Push
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ jobs:
   build-push:
     env:
       REGISTRY: ghcr.io/devozs
-      IMAGE: ikit-frontend
+      IMAGE: blog-frontend
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout GitHub Action"
