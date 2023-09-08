@@ -16,12 +16,14 @@ const filter = ref(tags?.split(","));
 useHead({
   title: "All Posts",
   meta: [
-    { name: "description", content: "Here's a list of all DevOps blogs" },
+    { name: "description", content: "DevOps Blog Posts built by DevOzs" },
     {
       hid: "og:image",
       property: "og:image",
-      content: `https://blog.devozs.com/devops-avatar.png`,
+      content: `https://blog.devozs.com/devops-avatar.png?timestamp=${new Date().getMilliseconds()}`,
     },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:image', content: `https://blog.devozs.com/devops-avatar.png?timestamp=${new Date().getMilliseconds()}` },
   ],
 });
 </script>

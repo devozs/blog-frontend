@@ -3,7 +3,7 @@
 useHead({
   title: "DevOzs Blog",
   meta: [
-    { name: 'description', content: 'DevOps Interview Blog Posts built by DevOzs' }
+    { name: 'description', content: 'DevOps Blog Posts built by DevOzs' }
   ],
 })
 </script>
