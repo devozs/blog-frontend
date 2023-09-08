@@ -29,6 +29,7 @@ useHead({
       property: "og:image",
       content: `https://ikit.devozs.com/${data.value.article.img}`,
     },
+    { name: 'twitter:card', content: 'summary_large_image' },
   ],
 });
 </script>
