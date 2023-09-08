@@ -1,8 +1,8 @@
 ---
-title: 'Continuence Deployment!'
+title: 'Continuences Deployment!'
 description: 'Use the GitOps way!'
 img: 'img/cd.png'
-tags: [CD, Deployment]
+tags: [CD, Deployment, FluxCD]
 ---
 
 ## Continuence Deployment

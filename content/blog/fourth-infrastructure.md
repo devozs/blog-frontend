@@ -2,7 +2,7 @@
 title: 'Infrastructure As Code!'
 description: 'You finally got the point about Nuxt content'
 img: 'img/infra.png'
-tags: [IaC, Infra]
+tags: [IaC, Infra, Terraform]
 ---
 
 ## Infrastructure As Code
