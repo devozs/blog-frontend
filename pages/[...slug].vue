@@ -38,7 +38,7 @@ useHead({
 <template>
   <main id="main" class="article-main">
     <header v-if="data.article" class="article-header">
-      <div class="img-cont h-72 mb-12">
+      <div class="img-cont h-72 mb-6">
         <img :src="`/${data.article.img}`" :alt="data.article.title" class=" rounded-2xl" />
       </div>
       <h1 class="heading">{{ data.article.title }}</h1>
@@ -78,7 +78,7 @@ useHead({
 }
 
 .article-header {
-  @apply p-4 pb-12;
+  @apply p-4 pb-3;
 }
 
 .article-header .heading {
@@ -94,7 +94,7 @@ useHead({
 }
 
 .aside {
-  @apply col-span-full md:col-span-2 row-start-1 w-full pt-14;
+  @apply col-span-full md:col-span-2 row-start-1 w-full pt-4;
 }
 
 .aside .toc {
