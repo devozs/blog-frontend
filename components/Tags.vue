@@ -59,7 +59,7 @@ console.log({ articleTags });
 <style scoped>
 /* ... */
 .tag-list {
-  @apply flex items-center gap-2 p-2 border border-transparent  rounded-lg;
+  @apply flex items-center gap-2 p-2 border border-transparent rounded-lg;
 }
 .tag-list.active {
   @apply border-slate-200;
@@ -68,6 +68,6 @@ console.log({ articleTags });
   @apply transition-all max-w-0 overflow-hidden;
 }
 .article-tags.expanded {
-  @apply max-w-full;
+  @apply max-w-full flex flex-wrap;
 }
 </style>
