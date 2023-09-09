@@ -30,7 +30,7 @@ useHead({
 <template>
   <main>
     <div>
-      <div class="img-cont h-72 mb-2">
+      <div class="img-cont h-72 mb-0">
         <img :src="`/img/devops-avatar.png`" :alt="DevOzsHome" class=" rounded-2xl" />
       </div>
       <!-- <div class="wrapper">
@@ -40,7 +40,7 @@ useHead({
     </div>
 
     <section class="page-section">
-      <Tags />
+      <Tags class="-mt-5"/>
 
       <!-- Render list of all articles in ./content/blog using `path` -->
       <!-- Provide only defined fieldsin the `:query` prop -->

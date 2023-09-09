@@ -17,7 +17,7 @@ console.log({ filter });
 // set meta for page
 useHead({
   title: `All blogs with ${slug}`,
-  meta: [{ name: "description", content: "Here's a list of all my great articles" }],
+  meta: [{ name: "description", content: "DevOps Blog Posts built by DevOzs" }],
 });
 </script>
 <template>
