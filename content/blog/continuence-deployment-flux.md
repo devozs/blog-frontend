@@ -214,14 +214,18 @@ data:
 
 ## Validation
 
-Once the reconciliation is completed we can check the rest of the deployment.
+Once the reconciliation is completed and verified all kustomization are ready (described above) we can check the rest of the deployment.
 ```bash
 kubectl get pod -n blog
 
 NAME                             READY   STATUS    RESTARTS   AGE
 blog-frontend-647c656d49-7q6x4   1/1     Running   0          79m
-
 ```
+Flux also have ***weave-gitops UI***
+![Alt text](/content/weave-gitops-1.png "GitHub Action Summary")
+![Alt text](/content/weave-gitops-2.png "GitHub Action Summary")
+
+
 ## The FluxCD Magic 🪄
 We are using two powerful Flux capabilities:
 - Listen to new images in a certian repository and given pattern
