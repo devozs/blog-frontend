@@ -29,7 +29,7 @@ jobs:
         npm run build
 
     - name: 'Test'
-      run: npm run coverage
+      run: npx vitest --coverage
 
     - name: 'Report Coverage'
       if: always() # Also generate the report if tests are failing
