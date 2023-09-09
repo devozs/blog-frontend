@@ -138,7 +138,7 @@ We've breaken our pipline into two main parts (jobs in GitHub Action terminology
 - test: We've implemented simple unit and component tests in this example. These tests are included to demonstrate where and how to place tests before proceeding to the build phase.
 - build-push: In this phase, we build the container using the Dockerfile described in the previous section and push it to the GitHub registry. This job stars running only after a succesful complition of test phase.
 
-### Unit / Compoenent Tests
+### 🧪 Unit / Compoenent Tests
 Basic testing implementation helps demonstrate a separate phase before triggering the build-push phase. This prevents images from being pushed into the registry in case the tests fail or are invalid.
 
 ::InfoBox{type="warning"}
