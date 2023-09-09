@@ -23,7 +23,7 @@ The key GitOps principles we aim to illustrate include:
 To accomplish this, we'll leverage FluxCD as our chosen GitOps tool. Within FluxCD, we will make use of several automation capabilities, including image policies, image automation, and more.
 
 ::InfoBox{type="warning"}
-Make sure to install [FluxCD CLI and prerequisites ](https://fluxcd.io/flux/installation/)
+Make sure to install [FluxCD CLI and other prerequisites ](https://fluxcd.io/flux/installation/)
 ::
 
 ## Repository Structure
