@@ -24,7 +24,9 @@ jobs:
         node-version: '17'
 
     - name: 'Install Deps'
-      run: npm install
+      run: |
+        npm install
+        npm run build
 
     - name: 'Test'
       run: npm run coverage
