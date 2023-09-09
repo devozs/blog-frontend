@@ -154,7 +154,7 @@ infra-controllers   28h   True    Applied revision: main@sha1:45260107f70f961887
 ```
 
 ## Secrets
-In this tutorial, I haven't utilized a secret manager like Azure Key Vault. Instead, I've employed a secret YAML file and ensured that it's not committed to GitHub by including it in the ***.gitignore*** file.
+In this tutorial, I haven't utilized a secret manager like Azure Key Vault. Instead, I've used a secret YAML file and ensured that it's not committed to GitHub by including it in the ***.gitignore*** file.
 
 ::InfoBox{type="error"}
 Make sure not to put your kubernetes secrets in Git
