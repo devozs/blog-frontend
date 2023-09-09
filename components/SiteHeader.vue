@@ -9,6 +9,13 @@
         </figure>
       </NuxtLink>
 
+      <a href="http://devozs.com" target="DevOzs" rel="noopener noreferrer">
+        <figure class="img-cont h-8">
+          <img class="gallery-img rounded-full" src="/img/ozs.jpeg" alt="Oz Shemesh">
+        </figure>
+      </a>
+
+
       <!-- <nav class="site-nav">
         <ul class="links">
           <li class="link">
@@ -25,7 +32,7 @@
   @apply sticky top-0 w-full p-4 bg-slate-100 bg-opacity-40 border-b-2 border-white border-opacity-30 backdrop-blur-lg z-20;
 }
 
-.site-header > .wrapper {
+.site-header>.wrapper {
   @apply flex items-center justify-between max-w-6xl m-auto;
 }
 

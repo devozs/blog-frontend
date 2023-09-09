@@ -14,7 +14,7 @@ const filter = ref(tags?.split(","));
 
 // set meta for page
 useHead({
-  title: "All Posts",
+  title: "DevOzs Posts",
   meta: [
     { name: "description", content: "DevOps Blog Posts built by DevOzs" },
     {

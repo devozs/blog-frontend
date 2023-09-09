@@ -2,10 +2,10 @@
     <footer class="site-footer">
         <div class="wrapper">
             <div class="footer-info">
-                <p class="text-xl font-bold">
-                    DevOps Interview Blog Posts
-                </p>
-                <span>Checkout my portfolio 💚 <a href="http://devozs.com" target="DevOzs"
+                <!-- <p class="text-xl font-bold">
+                    DevOps Blog Posts
+                </p> -->
+                <span>My portfolio 💚 <a href="http://devozs.com" target="DevOzs"
                         rel="noopener noreferrer">Oz Shemesh</a></span>
             </div>
             <ul class="footer-links">
