@@ -1,8 +1,8 @@
 ---
 title: 'Continuences Integration!'
-description: 'Containerize, Build and Push!'
+description: 'Test, Build, Containerize and Push!'
 img: 'img/ci.png'
-tags: [CI, Build, Docker, ContainerRegistry, GitHub]
+tags: [CI, Test, Build, Docker, ContainerRegistry, GitHub]
 ---
 
 ## Continuence Integration

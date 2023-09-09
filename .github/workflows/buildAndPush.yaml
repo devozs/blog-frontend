@@ -1,4 +1,4 @@
-name: Blog Frontend - Build and Push
+name: Blog Frontend - Test, Build and Push
 
 on:
   workflow_dispatch:
@@ -14,6 +14,10 @@ jobs:
     steps:
       - name: "Checkout GitHub Action"
         uses: actions/checkout@master
+
+      - name: UI unit test using vitest
+        run: |
+            npm run coverage
 
       - name: Generate build ID
         id: prep
