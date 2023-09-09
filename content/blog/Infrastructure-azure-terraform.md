@@ -7,7 +7,7 @@ tags: [IaC, Infra, Azure, AKS, Terraform]
 ---
 
 ::InfoBox{type=""}
-[Show Me The Code!](https://github.com/devozs/blog-deployment/tree/main/infra/terraform/azure)
+[Show me the Code!](https://github.com/devozs/blog-deployment/tree/main/infra/terraform/azure)
 ::
 
 ## Guidelines

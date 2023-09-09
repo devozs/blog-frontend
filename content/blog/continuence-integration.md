@@ -7,7 +7,7 @@ tags: [CI, Test, Build, Docker, ContainerRegistry, GitHub]
 ---
 
 ::InfoBox{type=""}
-[Show Me The Code!](https://github.com/devozs/blog-frontend)
+[Show me the Code!](https://github.com/devozs/blog-frontend)
 ::
 
 ## Guidelines
