@@ -15,6 +15,10 @@ jobs:
       - name: "Checkout GitHub Action"
         uses: actions/checkout@master
 
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 17
+
       - name: UI unit test using vitest
         run: |
             npm run coverage
