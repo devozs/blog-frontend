@@ -4,7 +4,7 @@ describe('import vue components', () => {
         expect(cmp).toBeDefined()
     })
     test('dynamic imports as expected', async () => {
-        const name = 'InfoBox'
+        const name = 'InfoBox1'
         const cmp = await import (`../components/content/${name}.vue`)
         expect(cmp).toBeDefined()
     })
