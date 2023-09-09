@@ -16,10 +16,10 @@ jobs:
       pull-requests: write
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: 'Install Node'
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: '17'
 
@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout GitHub Action"
-        uses: actions/checkout@master
+        uses: actions/checkout@v3
 
       - name: Generate build ID
         id: prep
@@ -54,10 +54,10 @@ jobs:
             echo "::set-output name=BUILD_ID::${branch}-${sha}-${ts}"          
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
+        uses: docker/setup-qemu-action@v2
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v2
 
       - name: "Build"
         run: |
