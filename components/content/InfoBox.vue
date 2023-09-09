@@ -14,6 +14,7 @@ const props = defineProps(["type"]);
     <!-- Conditionally render icons based on prop -->
     <ExclamationTriangleIcon v-if="type == 'warning'" class="icon solid" />
     <ExclamationCircleIcon v-else-if="type == 'error'" class="icon solid" />
+    <ExclamationCircleIcon v-else-if="type == 'code'" class="icon solid" />
     <InformationCircleIcon v-else class="icon solid" />
 
     <details>
@@ -65,4 +66,12 @@ details .details {
 .info-box.error .icon.solid {
   @apply fill-red-600;
 }
+.info-box.code {
+  @apply bg-slate-800 border-slate-200 text-slate-200;
+}
+
+.info-box.code .icon.solid {
+  @apply fill-slate-200;
+}
+
 </style>
