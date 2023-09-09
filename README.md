@@ -1,7 +1,7 @@
-# Interview Kit
+# Blog Frontend
 
-Simplae and plain frontend implementation using Nuxt v3, Nuxt Content and Tailwind.
-
+I`ve implemented my own DevOps Blog using Nuxt v3, Nuxt Content and Tailwind.
+This web application is deployed and beind used as part of the [FluxCD Tutorial](https://github.com/devozs/blog-deployment)
 ## Setup
 
 Make sure to install the dependencies:
@@ -31,4 +31,10 @@ Locally preview production build:
 
 ```bash
 npm run preview
+```
+
+## Tests
+
+```bash
+npm run coverage
 ```
