@@ -46,6 +46,7 @@ useHead({
       <!-- Provide only defined fieldsin the `:query` prop -->
       <ContentList path="/blog" :query="{
         only: ['title', 'description', 'tags', '_path', 'img'],
+        sort: [{ order: 1 }],
         where: {
           tags: {
             $contains: filter,

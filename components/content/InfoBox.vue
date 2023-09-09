@@ -31,7 +31,11 @@ const props = defineProps(["type"]);
 
 <style scoped>
 .info-box {
-  @apply flex items-start gap-2 p-4 bg-slate-100 border border-slate-200 text-slate-500 rounded-lg;
+  @apply flex items-start gap-2 p-4 bg-green-100 border border-green-200 text-green-500 rounded-lg;
+}
+
+.icon.solid {
+  @apply fill-green-600;
 }
 
 details summary {
