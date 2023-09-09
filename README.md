@@ -39,4 +39,4 @@ npm run preview
 npm run coverage
 ```
 
-Thanks to the [content-v2-blog](https://github.com/miracleonyenma/content-v2-blog) repo as i was using it a baseline and made additional changes.
+Thanks to the [content-v2-blog](https://github.com/miracleonyenma/content-v2-blog) repo as i was using it as baseline and made additional changes.
