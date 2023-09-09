@@ -1,7 +1,7 @@
 # Blog Frontend
 
 Implemented my own DevOps Blog using Nuxt v3, Nuxt Content and Tailwind.
-This web application is deployed and beind used as part of the [FluxCD Tutorial](https://github.com/devozs/blog-deployment)
+This web application is deployed and used as part of the [FluxCD Tutorial](https://github.com/devozs/blog-deployment)
 ## Setup
 
 Make sure to install the dependencies:
