@@ -145,7 +145,6 @@ You can view list workflows execution
 ### Unit / Compoenent Tests
 Basic testing implementation helps demonstrate a separate phase before triggering the build-push phase. This prevents images from being pushed into the registry in case the tests fail or are invalid.
 
-
 ::InfoBox{type="warning"}
 This is just an example; in a real-case scenario, there should be many more meaningful funtional and non-functional tests!
 ::
@@ -163,6 +162,9 @@ This is just an example; in a real-case scenario, there should be many more mean
       if: always() # Also generate the report if tests are failing
       uses:  davelosert/vitest-coverage-report-action@v2
 ```
+
+Tests results on GitHub Actions:
+
 ![Alt text](/content/github-actions-tests.png "GitHub Action List")
 
 Running tests locally:
