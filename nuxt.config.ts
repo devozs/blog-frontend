@@ -2,6 +2,19 @@
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      titleSeparator: '·',
+      siteUrl: 'https://blog.devozs.com/',
+      siteName: 'DevOzs Blog',
+      siteDescription: 'DevOps Blog Posts built by DevOzs',
+      language: 'en',
+      trailingSlash: true,
+    }
+  },
+  extends: [
+    'nuxt-seo-kit'
+  ],
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
   content: {
     // https://content.nuxtjs.org/api/configuration

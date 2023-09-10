@@ -14,11 +14,12 @@ const filter = slug.split(",");
 console.log({ filter });
 
 
-// set meta for page
-useHead({
-  title: `All blogs with ${slug}`,
-  meta: [{ name: "description", content: "DevOps Blog Posts built by DevOzs" }],
-});
+useSeoMeta({
+  title: () => `All blogs with ${slug}`,
+  description: () => "DevOps Blog Posts built by DevOzs",
+  twitterImage: () => `https://blog.devozs.com/img/devops-avatar.png?timestamp=${new Date().getMilliseconds()}`,
+})
+
 </script>
 <template>
   <main>
