@@ -22,7 +22,7 @@ console.log({ data, prev, next });
 useSeoMeta({
   title: () => data.value.article.title,
   description: () => data.value.article.description,
-  twitterImage: () => `https://blog.devozs.com/${data.value.article.img}?timestamp=${new Date().getMilliseconds()}`,
+  ogImage: () => `https://blog.devozs.com/${data.value.article.img}?timestamp=${new Date().getMilliseconds()}`,
 })
 
 </script>

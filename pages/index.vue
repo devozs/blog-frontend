@@ -13,9 +13,7 @@ const {
 const filter = ref(tags?.split(","));
 
 useSeoMeta({
-  title: () => "DevOzs Posts",
-  description: () => "DevOps Blog Posts built by DevOzs",
-  twitterImage: () => `https://blog.devozs.com/img/devops-avatar.png?timestamp=${new Date().getMilliseconds()}`,
+  ogImage: () => `https://blog.devozs.com/img/devops-avatar.png?timestamp=${new Date().getMilliseconds()}`,
 })
 
 </script>

@@ -1,9 +1,7 @@
 <!-- ./app.vue -->
 <script setup>
 useSeoMeta({
-  title: () => "DevOzs Posts",
-  description: () => "DevOps Blog Posts built by DevOzs",
-  twitterImage: () => `https://blog.devozs.com/devops-avatar.png?timestamp=${new Date().getMilliseconds()}`,
+  ogImage: () => `https://blog.devozs.com/devops-avatar.png?timestamp=${new Date().getMilliseconds()}`,
 })
 
 </script>

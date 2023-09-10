@@ -15,9 +15,8 @@ console.log({ filter });
 
 
 useSeoMeta({
-  title: () => `All blogs with ${slug}`,
-  description: () => "DevOps Blog Posts built by DevOzs",
-  twitterImage: () => `https://blog.devozs.com/img/devops-avatar.png?timestamp=${new Date().getMilliseconds()}`,
+  title: () => `Blogs with ${slug}`,
+  ogImage: () => `https://blog.devozs.com/img/devops-avatar.png?timestamp=${new Date().getMilliseconds()}`,
 })
 
 </script>
