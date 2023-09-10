@@ -35,5 +35,16 @@ export default defineNuxtConfig({
   },
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
-  }
+  },
+  app: {
+    head: {
+      charset: 'utf-8',
+      meta: [
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:image', content: `https://blog.devozs.com/devops-avatar.png?timestamp=${new Date().getMilliseconds()}` },
+      ],
+    },
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
+
 })
