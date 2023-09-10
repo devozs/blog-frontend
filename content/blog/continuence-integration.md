@@ -163,6 +163,7 @@ This is just an example; in a real-case scenario, there should be many more mean
       if: always() # Also generate the report if tests are failing
       uses:  davelosert/vitest-coverage-report-action@v2
 ```
+![Alt text](/content/github-actions-tests.png "GitHub Action List")
 
 ### Build Docker
 We are using the branch name, commit SHA, and timestamp to compose the image tag (we'll use this later as part of the continuous deployment tutorial).
@@ -210,3 +211,8 @@ Then we use the images created in the previous step, tag them with the GitHub Co
 
 Verify that the image exists in GitHub Packages (or any other container registry you are working with) with the relevant tag.
 ![Alt text](/content/blog-frontend-image.png "blog-frontend image in Github Registry")
+
+You can try and pull it, for example:
+```bash
+docker pull ghcr.io/<YOUR_ORG>/blog-frontend:main-fc611440-1694297249
+``` 
