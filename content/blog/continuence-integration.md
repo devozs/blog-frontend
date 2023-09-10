@@ -165,6 +165,37 @@ This is just an example; in a real-case scenario, there should be many more mean
 ```
 ![Alt text](/content/github-actions-tests.png "GitHub Action List")
 
+Running tests locally:
+```bash
+npm run coverage
+
+> coverage
+> vitest run --coverage
+
+
+ RUN  v0.34.4 /home/devozs/workspace/sandbox/blog-frontend
+      Coverage enabled with v8
+
+ ✓ tests/imports.test.ts (2)
+   ✓ import vue components (2)
+     ✓ normal imports as expected
+     ✓ dynamic imports as expected
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  00:22:38
+   Duration  1.03s (transform 83ms, setup 0ms, collect 21ms, tests 279ms, environment 0ms, prepare 89ms)
+
+ % Coverage report from v8
+-------------|---------|----------|---------|---------|-------------------
+File         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------|---------|----------|---------|---------|-------------------
+All files    |     100 |      100 |     100 |     100 |                   
+ InfoBox.vue |     100 |      100 |     100 |     100 |                   
+-------------|---------|----------|---------|---------|-------------------
+
+```
+
 ### Build Docker
 We are using the branch name, commit SHA, and timestamp to compose the image tag (we'll use this later as part of the continuous deployment tutorial).
 
