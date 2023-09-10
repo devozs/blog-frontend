@@ -1,11 +1,11 @@
 <!-- ./app.vue -->
 <script setup>
-useHead({
-  title: "DevOzs Blog",
-  meta: [
-    { name: 'description', content: 'DevOps Blog Posts built by DevOzs' }
-  ],
+useSeoMeta({
+  title: () => "DevOzs Posts",
+  description: () => "DevOps Blog Posts built by DevOzs",
+  twitterImage: () => `https://blog.devozs.com/devops-avatar.png?timestamp=${new Date().getMilliseconds()}`,
 })
+
 </script>
 <template>
   <div>

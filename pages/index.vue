@@ -12,20 +12,12 @@ const {
 
 const filter = ref(tags?.split(","));
 
-// set meta for page
-useHead({
-  title: "DevOzs Posts",
-  meta: [
-    { name: "description", content: "DevOps Blog Posts built by DevOzs" },
-    {
-      hid: "og:image",
-      property: "og:image",
-      content: `https://blog.devozs.com/devops-avatar.png?timestamp=${new Date().getMilliseconds()}`,
-    },
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:image', content: `https://blog.devozs.com/devops-avatar.png?timestamp=${new Date().getMilliseconds()}` },
-  ],
-});
+useSeoMeta({
+  title: () => "DevOzs Posts",
+  description: () => "DevOps Blog Posts built by DevOzs",
+  twitterImage: () => `https://blog.devozs.com/devops-avatar.png?timestamp=${new Date().getMilliseconds()}`,
+})
+
 </script>
 <template>
   <main>

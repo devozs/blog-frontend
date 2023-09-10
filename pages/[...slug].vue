@@ -19,21 +19,12 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
 const [prev, next] = data.value.surround;
 console.log({ data, prev, next });
 
-// set the meta
-useHead({
-  title: data.value.article.title,
-  meta: [
-    { name: "description", content: data.value.article.description },
-    {
-      hid: "og:image",
-      property: "og:image",
-      content: `https://blog.devozs.com/${data.value.article.img}?timestamp=${new Date().getMilliseconds()}`,
-    },
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:image', content: `https://blog.devozs.com/${data.value.article.img}?timestamp=${new Date().getMilliseconds()}` },
+useSeoMeta({
+  title: () => data.value.article.title,
+  description: () => data.value.article.description,
+  twitterImage: () => `https://blog.devozs.com/${data.value.article.img}?timestamp=${new Date().getMilliseconds()}`,
+})
 
-  ],
-});
 </script>
 <template>
   <main id="main" class="article-main">
