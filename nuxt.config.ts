@@ -15,7 +15,11 @@ export default defineNuxtConfig({
   extends: [
     'nuxt-seo-kit'
   ],
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
+  modules: [
+      '@nuxt/content',
+      '@nuxtjs/tailwindcss',
+      'nuxt-gtag'
+  ],
   content: {
     // https://content.nuxtjs.org/api/configuration
     highlight: {
