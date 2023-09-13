@@ -10,6 +10,7 @@ export default defineNuxtConfig({
       siteDescription: 'DevOps Blog Posts built by DevOzs',
       language: 'en',
       trailingSlash: true,
+      NUXT_PUBLIC_GTAG_ID: process.env.NUXT_PUBLIC_GTAG_ID,
     }
   },
   extends: [
