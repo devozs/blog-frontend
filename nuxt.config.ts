@@ -10,7 +10,6 @@ export default defineNuxtConfig({
       siteDescription: 'DevOps Blog Posts built by DevOzs',
       language: 'en',
       trailingSlash: true,
-      NUXT_PUBLIC_GTAG_ID: process.env.NUXT_PUBLIC_GTAG_ID,
     }
   },
   extends: [
@@ -21,6 +20,9 @@ export default defineNuxtConfig({
       '@nuxtjs/tailwindcss',
       'nuxt-gtag'
   ],
+  gtag: {
+    id: process.env.NUXT_PUBLIC_GTAG_ID,
+  },
   content: {
     // https://content.nuxtjs.org/api/configuration
     highlight: {
