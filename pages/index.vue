@@ -35,7 +35,7 @@ useSeoMeta({
       <!-- Render list of all articles in ./content/blog using `path` -->
       <!-- Provide only defined fieldsin the `:query` prop -->
       <ContentList path="/blog" :query="{
-        only: ['title', 'description', 'tags', '_path', 'img'],
+        only: ['title', 'description', 'tags', '_path', 'img', 'created'],
         sort: [{ order: 1 }],
         where: {
           tags: {
@@ -55,7 +55,7 @@ useSeoMeta({
                   </div>
                   <header>
                     <h1 class="text-2xl font-semibold">{{ article.title }}</h1>
-                    <p>{{ article.description }}</p>
+                    <p>{{ article.description }} · {{ article.created }}</p>
                     <ul class="article-tags">
                       <li class="tag !py-0.5" v-for="(tag, n) in article.tags" :key="n">{{ tag }}</li>
                     </ul>

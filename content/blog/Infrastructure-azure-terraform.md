@@ -4,6 +4,7 @@ title: 'Infrastructure As Code!'
 description: 'Use Azure AKS and Terraform!'
 img: 'img/infra.png'
 tags: [IaC, Infra, Azure, AKS, Terraform]
+created: 07.09.2023
 ---
 
 ::InfoBox{type=""}

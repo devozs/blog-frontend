@@ -4,6 +4,7 @@ title: 'Continuences Deployment!'
 description: 'Use FluxCD, the GitOps way!'
 img: 'img/cd.png'
 tags: [CD, Deployment, FluxCD]
+created: 07.09.2023
 ---
 
 ::InfoBox{type=""}

@@ -4,6 +4,7 @@ title: 'Continuences Integration!'
 description: 'Test, Build, Containerize and Push!'
 img: 'img/ci.png'
 tags: [CI, Test, Build, Docker, ContainerRegistry, GitHub]
+created: 07.09.2023
 ---
 
 ::InfoBox{type=""}
